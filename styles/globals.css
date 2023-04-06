@@ -16,6 +16,8 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 @layer base {
@@ -35,3 +37,10 @@ body {
     color-scheme: dark;
   }
 }
+
+/* @media  (min-width: 1120px) {
+  body {
+    min-width: 1100px;
+  }
+  
+} */

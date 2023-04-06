@@ -4,10 +4,10 @@ import Navbar from '@/components/Navbar'
 
 const MainLayout = ({ children }) => {
     return(
-        <>
+        <div className='w-full flex-col flex justify-center items-center'>
             <Navbar />
             <div>{children}</div>
-        </>
+        </div>
     )
 }
 
