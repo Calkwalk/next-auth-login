@@ -1,0 +1,38 @@
+.bg_image {
+    @apply bg-gradient-to-r from-blue-500 to-indigo-500 rounded-l-md;
+    position: relative;
+    overflow: hidden;
+}
+
+.cartoon_image {
+    background: url('/assets/login-bg.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.logo_image {
+    background: url('/assets/logo.png') no-repeat;
+    background-position: absolute;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background-size: 80px 80px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+    /* transform: translateX(290%);
+    animation: logoImg 35.5s ease-in 4.9s infinite; */
+}
+
+@keyframes logoImg {
+    0%{
+        transform: translateX(180%);
+    }
+    100%{
+        transform: translateX(-150%);
+    }
+}

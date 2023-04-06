@@ -1,0 +1,41 @@
+.input_group {
+    @apply flex border rounded-xl relative;
+}
+
+.input_text {
+    @apply w-full py-4 px-4 outline-0 outline-offset-0 rounded-xl;
+    /* @apply focus: outline-none; */
+}
+
+.input_text + * {
+    color: #cbd5e1;
+}
+
+.input_text:focus + * {
+    color: #6366f1;
+}
+
+.input_text ~ span:hover{
+    color: #6366f1;
+    cursor: pointer;
+}
+
+.button {
+    @apply w-full bg-gradient-to-r from-blue-500 to-indigo-500 py-4 rounded-3xl text-white;
+}
+
+.button:hover{
+    @apply bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500;
+}
+
+.button_custom {
+    @apply w-full bg-gray-200 py-4 rounded-xl text-gray-700 flex justify-center items-center gap-5;
+}
+
+.button_custom:hover{
+    @apply bg-gradient-to-r from-blue-500 to-indigo-500 text-white;
+}
+
+.invalid_tips{
+    @apply text-[12px] text-red-600 text-left mx-4 mt-[-20px];
+}
